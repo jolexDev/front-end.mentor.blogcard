@@ -61,6 +61,7 @@ h3:active {
 
 .card_Icon {
   max-width: 15%;
+  border-radius: 1.2em;
 }
 
 .card_Author {
