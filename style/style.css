@@ -27,12 +27,13 @@ section {
   padding: 1.3em;
   border: 1px solid black;
   border-radius: 1.1em;
+  box-shadow: 6px 6px 1px black;
 }
 
 .card_Tag {
   background: hsl(47, 88%, 63%);
   display: inline-block;
-  padding: 0.4em 0.6em;
+  padding: 0.4em 0.7em;
   font-weight: 700;
   border-radius: 0.2em;
   margin-bottom: 0.2em;
@@ -46,6 +47,11 @@ section {
 h3 {
   font-size: 1.4rem;
   margin: 0.7em 0 0.7em;
+  cursor: pointer;
+}
+
+h3:active {
+  color: hsl(47, 88%, 63%);
 }
 
 .card_Text {
@@ -54,15 +60,35 @@ h3 {
 }
 
 .card_Icon {
-  max-width: 13%;
+  max-width: 15%;
 }
 
 .card_Author {
   font-weight: 800;
+  font-size: 0.9em;
 }
 
 .row {
   display: flex;
   align-items: center;
   gap: 1em;
+}
+
+@media (min-width: 420px) {
+  .card {
+    width: 380px;
+    box-shadow: 12px 12px 1px black;
+  }
+
+  .card_Text {
+    font-size: 1.08em;
+  }
+
+  .card_Icon {
+    width: 100%;
+  }
+
+  .card_Author {
+    font-size: 1em;
+  }
 }
