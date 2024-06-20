@@ -10,7 +10,7 @@ body {
 }
 
 section {
-  min-height: 680px;
+  min-height: 900px;
   display: flex;
   align-items: center;
 }
